@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionControl - How to Use</title>
+    <style>
+        :root {
+            --monday-blue: #0073ea;
+            --monday-purple: #a25ddc;
+            --monday-green: #00c875;
+            --monday-gray: #676879;
+            --gradient-bg: linear-gradient(135deg, #0073ea, #a25ddc);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fafbfc;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin: 2rem auto;
+        }
+
+        h1, h2, h3 {
+            color: #181b1f;
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            background: var(--gradient-bg);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 1rem;
+            display: inline-block;
+        }
+
+        .emoji-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .installation-steps {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .step {
+            background: white;
+            border: 1px solid #e6e9ef;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: left;
+            transition: transform 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .step-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .step-text {
+            flex: 1;
+        }
+
+        .step-gif {
+            flex: 2;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .step-gif img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-bg);
+            border-radius: 4px 0 0 4px;
+        }
+
+        .step-number {
+            background: var(--gradient-bg);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .conclusion {
+            background: var(--gradient-bg);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="VisionApps (3).png" alt="VisionControl Logo" style="width: 500px; height: 400px;margin-top: -2rem ;margin-bottom: -8rem;">
+        <h1>Welcome to VisionControl</h1>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="emoji-icon">🔐</div>
+                <h3>Permissions</h3>
+                <p>Advanced user control management</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji-icon">📋</div>
+                <h3>Board Management</h3>
+                <p>Efficient Boards organization</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji-icon">📊</div>
+                <h3>Analytics</h3>
+                <p>Comprehensive data insights</p>
+            </div>
+        </div>
+
+        <div class="installation-steps">
+            <h2><span class="section-icon">🚀</span>Installation Guide</h2>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Navigate to Marketplace</h3>
+                        <p>Open your monday.com account and navigate to the Marketplace section to find new apps.</p>
+                    </div>
+                    <div class="step-gif">
+                        <video width="100%" autoplay loop muted>
+                            <source src="1.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Search VisionControl</h3>
+                        <p>Use the search bar to find VisionControl in the marketplace.</p>
+                    </div>
+                    <div class="step-gif">
+                        <video width="100%" autoplay loop muted>
+                            <source src="2 (online-video-cutter.com).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Installation Process</h3>
+                        <p>Select the app and click on the installation button to begin the process.</p>
+                    </div>
+                    <div class="step-gif">
+                        <video width="100%" autoplay loop muted>
+                            <source src="3.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Choose Seats</h3>
+                        <p>Select the number of seats needed for your team's application management.</p>
+                    </div>
+                    <div class="step-gif">
+                        <video width="100%" autoplay loop muted>
+                            <source src="4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Access the App</h3>
+                        <p>Find VisionControl in your Apps section on the main dashboard.</p>
+                    </div>
+                    <div class="step-gif">
+                        <video width="100%" autoplay loop muted>
+                            <source src="5.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Start Managing</h3>
+                        <p>Begin managing your workspace with VisionControl's powerful features.</p>
+                    </div>
+                    <div class="step-gif">
+                        <video width="100%" autoplay loop muted>
+                            <source src="6 (online-video-cutter.com).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <div class="emoji-icon">✨</div>
+            <p>Enjoy a streamlined and effective management experience with VisionControl!</p>
+        </div>
+    </div>
+</body>
+</html>
